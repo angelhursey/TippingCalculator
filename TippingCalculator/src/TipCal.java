@@ -179,7 +179,7 @@ public class TipCal {
 				Scanner userinput = new Scanner(System.in);
 				int guest = userinput.nextInt();
 				guestTip = guest * 1;
-				System.out.println("Suggested tip amount: $" + df.format(avgTip) + " for the entire bill or $" + df.format(drinkTip) + " for the number of guest");
+				System.out.println("Suggested tip amount: $" + df.format(avgTip) + " for the entire bill or $" + df.format(guestTip) + " for the number of guest");
 				userinput.close();
 			}
 			else if (rate.equals("Poor") || rate.equals("poor")) {
@@ -194,7 +194,7 @@ public class TipCal {
 				Scanner userinput = new Scanner(System.in);
 				int guest = userinput.nextInt();
 				guestTip = guest * 1;
-				System.out.println("Suggested tip amount: $" + df.format(poorTip) + " for the entire bill or $" + df.format(drinkTip) + " for the number of guest");
+				System.out.println("Suggested tip amount: $" + df.format(poorTip) + " for the entire bill or $" + df.format(guestTip) + " for the number of guest");
 				userinput.close();
 			}
 			else {
