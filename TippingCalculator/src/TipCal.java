@@ -124,6 +124,10 @@ public class TipCal {
 				if (bill < 20) {
 					greatTip = 3;
 				}
+				//Tips a minimum $5 if bill > $20				
+				if (greatTip < 5) {
+					greatTip = 5;
+				}	
 				System.out.println("Suggested tip amount: $" + df.format(greatTip));
 			}
 			else if (rate.equals("Average") || rate.equals("average")) {
@@ -134,6 +138,10 @@ public class TipCal {
 				if (bill < 20) {
 					avgTip = 3;
 				}
+				//Tips a minimum $5 if bill > $20				
+				if (avgTip < 5) {
+					avgTip = 5;
+				}
 				System.out.println("Suggested tip amount: $" + df.format(avgTip));
 			}
 			else if (rate.equals("Poor") || rate.equals("poor")) {
@@ -143,6 +151,10 @@ public class TipCal {
 				//Tips a minimum $3 if bill < $20
 				if (bill < 20) {
 					poorTip = 3;
+				}
+				//Tips a minimum $5 if bill > $20				
+				if (poorTip < 5) {
+					poorTip = 5;
 				}
 				System.out.println("Suggested tip amount: $" + df.format(poorTip));
 			}
