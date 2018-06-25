@@ -12,7 +12,7 @@ public class TipCal {
 //Uber/Lyft driver 15-20%
 		
 		//Ask about service type, receive input		
-		System.out.println("What type of service did you receive?");
+		System.out.println("What type of service did you receive? (Options listed below)");
 		System.out.println("\n*************************************************");
 		System.out.println("Type 'Waiter' for a sit down restaurant service");
 		System.out.println("Type 'Bar' for a bar/bartender service");
@@ -24,7 +24,7 @@ public class TipCal {
 		String service = input.nextLine();
 		
 		//Rating of service		
-		System.out.println("How would you rate your service?");
+		System.out.println("How would you rate your service? (Options listed below)");
 		System.out.println("\n*************************************************");
 		System.out.println("Type 'Great' for excellent service \nType 'Average' for average service \nType 'Poor' for bad service");
 		System.out.println("*************************************************");
